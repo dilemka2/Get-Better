@@ -1,0 +1,784 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    
+}
+
+main {
+    text-align: center;
+}
+
+.imgWord {
+    background-image: url();
+    width: 150px;
+    background-repeat: no-repeat;
+    border: 2px solid;
+    margin-top: 20px !important;
+    margin: 0 auto;
+    border-radius: 12px;
+    height: 150px;
+    background-size: cover;
+}
+
+.backmain1 {
+    position: absolute;
+    top: 40px;
+    color:#14213d;
+    width: 50px;
+    height: 50px;
+    background-color: #14213d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 20px;
+    background-color: #fc2c11;
+    padding: 0;
+    transition: .5s;
+    border-radius: 15px;
+    font-size: 35px;
+}
+.backmain2 {
+    position: absolute;
+    top: 40px;
+    color:#14213d;
+    width: 50px;
+    height: 50px;
+    background-color: #14213d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 20px;
+    background-color: #fc2c11;
+    padding: 0;
+    transition: .5s;
+    border-radius: 15px;
+    font-size: 35px;
+}
+
+
+.backmain:hover,
+.backmain1:hover,
+.backmain2:hover {
+    box-shadow: #fc2c11 0px 5px 15px;
+    transform: scale(1.1);
+}
+
+body {
+    background-color: black;
+    color: #fca311;
+    font-family: "Oswald", sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Menu */
+
+.mainblock {
+    width: 100%;
+    height: 800px;
+    border: 2px solid #14213d;
+    margin-top: 100px;
+    border-radius: 26px;
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+.info {
+    position: absolute;
+    bottom:20px;
+    color: #fca311;
+    width: 50px;
+    height: 50px;
+    background-color: #14213d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 20px;
+    padding: 0;
+    border-radius: 15px;
+}
+
+
+.mainblock img {
+    transition: .5s;
+    max-width: 150%;
+    position: relative;
+    z-index: -2;
+    transform:translateY(400px);
+}
+
+.mainp {
+    border-bottom: 2px solid  #14213d;
+    user-select: none;
+}
+
+button {
+    margin-top: 50px;
+    background-color:#fca311;
+    padding: 25px 45px;
+    border-radius: 20px;
+    border: 0;
+    cursor: pointer;
+    font-size: 20px;
+    transition: .5s;
+    font-family: "Oswald", sans-serif;
+}
+
+.startBTN {
+    margin-top: 250px;
+}
+
+button:hover {
+    transform: translateY(-10px);
+    box-shadow: #fca311 0px 5px 15px;
+}
+
+/* Choose the mode block */
+.menublock {
+    width: 100%;
+    position: relative;
+    height: 800px;
+    border: 2px solid #14213d;
+    margin-top: 100px;
+    display: none;
+    border-radius: 26px;
+    display: none;
+}
+
+.listofbtn {
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    column-gap: 20px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+.listofbtn button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 277px;
+    height: 99px;
+    margin-top: 20px;
+}
+
+
+/* Explanation block */
+.backmain {
+    position: absolute;
+    top: 40px;
+    color:#14213d;
+    width: 50px;
+    height: 50px;
+    background-color: #14213d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 20px;
+    background-color: #fc2c11;
+    padding: 0;
+    transition: .5s;
+    border-radius: 15px;
+    font-size: 35px;
+}
+
+
+.infoBlock {
+    width: 100%;
+    height: 900px;
+    display: none;
+    border: 2px solid #14213d;
+    margin-top: 100px;
+    border-radius: 26px;
+    overflow: hidden;
+    position: relative;
+}
+
+.infoBlock p {
+    margin-right: 50px;
+}
+
+
+/* First mode(translate the word) */
+
+.ChooseWBlock {
+    width: 100%;
+    height: 800px;
+    position: relative;
+    border: 2px solid #14213d;
+    margin-top: 100px;
+    display: none;
+    border-radius: 26px;
+}
+
+.wrapper {
+    width: 250px;
+    padding: 30px;
+    width: 300px;
+    margin: 0 auto;
+    border: none !important; 
+
+}
+
+.wrapper .input-data {
+    height: 40px;
+    width: 100%;
+    margin-top: 50px;
+    position: relative;
+}
+
+.wrapper .input-data input{
+    height: 100%;
+    width: 100%;
+    color: #fca311;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 2px solid #fca311 !important;
+}
+
+.input-data input:focus ~ label,
+.input-data input:valid ~ label {
+    transform: translateY(-35px);
+}
+
+.wrapper .input-data label{
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    transform: translateY(-15px);
+    transition: .5s;
+    color:#fca311;
+    pointer-events: none;
+}
+
+.blockW {
+    padding: 20px 25px;
+    background-color: beige;
+    height: 100px;
+    margin:0 auto;
+    margin-top: 40px;
+    text-align: center;
+    width:400px;
+    outline: 5px solid #fca311;
+    border-radius: 25px;
+}
+
+.thatword {
+    color: #fca311 !important;
+    font-size: 55px;
+    position: relative;
+}
+
+
+.inpline {
+    display: inline-block;
+    position: relative;
+    left: -60px;
+    top: -50px;
+}
+
+
+.ans {
+    position: relative;
+    cursor: pointer;
+    width: 300px;
+    left: -20px;
+}
+
+
+label {
+    display: inline-block; 
+    width: 30px;
+    position: relative;
+    padding-left: 10px;
+}
+
+label:before {
+    content: '';
+    position: absolute;
+    left: -44px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid #fca311;
+    background-color: #14213d;
+}
+
+.inpline input:checked + label:before {
+    background-color: #fca311;
+}
+
+.testBlock {
+    width: 82px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 20px;
+    font-size: 25px;
+    margin: 21px auto;
+}
+
+.inpline input {
+    opacity: 0;
+}
+
+.check {
+    margin-top: 0;
+}
+
+
+/* You don`t have words enough (Block/Alert) */
+.notenoughArray {
+    width: 60%;
+    height: 400px;
+    position: relative;
+    border: 2px solid #14213d !important;
+    margin-top: -680px;
+    display: none;
+    background: black;
+    border: 2px solid;
+    z-index: 2;
+    border-radius: 26px;
+}
+
+.notenoughArrayContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.notenoughArray .backmain {
+    margin-top: 0px;
+}
+
+.notenoughArray h2 {
+    margin-top: 40px;
+}
+
+.wrapper label::before {
+    content:'';
+    display: none;
+}
+
+/* Adding word block */
+
+.addWordBlock  {
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    overflow-y: auto;
+    position: relative;
+    border: 2px solid #14213d;
+    margin-top: 100px;
+    display: none;
+    border-radius: 26px;
+    padding: 40px 0 0 0;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #fca311;
+    border-radius:15px;
+  }
+.addWordBlock h2 {
+    margin-top:20px;
+}
+
+.addWordBlock button {
+    margin-top:0px;
+}
+
+table {
+    border-spacing: 10px; 
+}
+td {
+    padding: 10px; 
+    outline: 1px solid #fca311;
+}
+
+
+
+.addWordBlock .n_del{
+    height: 100%;
+    width: 200px;
+    text-align: center;
+    color: #fca311;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 2px solid #fca311 !important;
+}
+
+
+.n_del::placeholder {
+    color: #fca311;
+}
+.addWordBlock button {
+    margin-bottom: 20px;
+}
+.addWordBlock .btnin {
+    background-color:#71e226;
+    padding: 5px 45px;
+    border-radius: 20px;
+    border: 0;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 20px;
+    transition: .5s;
+    font-family: "Oswald", sans-serif;
+}
+
+.addWordBlock .btnin:hover {
+    background-color:#63bd27;
+}
+
+.addWordTable {
+    position: absolute;
+    display: block;
+    margin-left: 10px;
+    left: 20px;
+    padding: 10px;
+}
+
+.wordfortable {
+    margin-top: 20px;
+    position: absolute;
+    left: 38px;
+}
+
+
+.addWordTable {
+    position: relative;
+    width: 100%;
+    overflow: hidden; 
+    max-width: 100%;
+    margin-top: 50px;
+    border-collapse: collapse; 
+    table-layout: fixed; 
+}
+
+.addWordTable th{
+   padding: 0 0 0px 5px;
+}
+
+
+/* Choose the difficult */
+.choosethedifficult {
+    width: 100%;
+    height: 800px;
+    position: relative;
+    border: 2px solid #14213d;
+    margin-top: 100px;
+    background-image: url(img/menubg.png);
+    background-position: -23px 348px;
+    display: none;
+    border-radius: 26px;
+    padding: 40px 0 0 0;
+}
+
+.choosethedifficult h1{
+    margin-top: 40px;
+}
+
+.buttons button {
+    margin-right: 10px;
+    padding: 20px 40px;
+}
+
+
+.buttons {
+    margin-top: 100px;
+}
+
+.choosethedifficult span{
+    font-size: 14px;
+}
+
+.buttons .easy {
+    background-color: greenyellow;
+}
+
+.buttons .easy:hover {
+    background-color: rgb(149, 216, 49);
+    box-shadow: rgb(149, 216, 49) 0px 5px 15px;
+}
+
+.buttons .medium {
+    background-color: rgb(218, 129, 46);;
+}
+
+.buttons .medium:hover {
+    box-shadow: rgb(218, 129, 46) 0px 5px 15px;
+}
+.buttons .hard {
+    background-color: rgb(218, 72, 46);
+}
+
+.buttons .hard:hover {
+    box-shadow: rgb(218, 72, 46) 0px 5px 15px;
+}
+
+.buttons button {
+    width: 200px;
+    height: 100px;
+    padding: 0;
+}
+
+/* Second mode(translate the word yourself)  */
+
+.TranslateTheword {
+    width: 100%;
+    height: 800px;
+    position: relative;
+    border: 2px solid #14213d;
+    margin-top: 100px;
+    background-image: url(img/menubg.png);
+    background-position:-99px 212px;
+    display: none;
+    border-radius: 26px;
+    padding: 40px 0 0 0;
+}
+
+.TranslateTheword h1 {
+    margin-top: -30px;
+}
+
+.TranslateTheword input {
+    height: 20px;
+    width: 200px;
+    text-align: center;
+    color: #fca311;
+    font-size: 20px;
+    margin-top: 100px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 2px solid #fca311 !important;
+}
+
+/* Third mode(chose the wrong meaning of correct) */
+.Choosethewrong {
+    width: 100%;
+    height: 800px;
+    position: relative;
+    border: 2px solid #14213d;
+    margin-top: 100px;
+    background-position: -23px 348px;
+    display: none;
+    border-radius: 26px;
+    padding: 40px 0 0 0;
+}
+
+
+
+.Choosethewrong .btn {
+    margin-top: 50px;
+    background-color:#fca311;
+    padding: 25px 45px;
+    border-radius: 20px;
+    border: 0;
+    cursor: pointer;
+    font-size: 20px;
+    transition: .5s;
+    font-family: "Oswald", sans-serif;
+}
+
+.ChoosethewrongP {
+    border-bottom: 2px solid #14213d;
+}
+
+.Choosethewrong h1 {
+    margin-top: -40px;
+}
+
+.thatwordWRONG {
+    color: #fca311 !important;
+    font-size: 20px;
+    position: relative;
+}
+
+.blockWRONG {
+    padding: 20px 25px;
+    background-color: beige;
+    height: 15px;
+    margin: 0 auto;
+    margin-top: 101px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 538px;
+    outline: 5px solid #fca311;
+    border-radius: 25px;
+}
+
+.intestwr .btn {
+    width: 260px;
+    height: 100px;
+    display: flex;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.testBlockWRONG {
+    width: 82px;
+    display: block;
+    margin: 0 auto;
+    font-size: 25px;
+    position: relative;
+    margin: 21px auto;
+}
+
+.testBlockWRONG input {
+    opacity: 0;
+}
+
+
+.Choosethewrong 
+.Choosethewrong h1 {
+    position: relative;
+    bottom: 30px;
+}
+
+label {
+    display: inline-block; 
+    width: 30px;
+    position: relative;
+    padding-left: 10px;
+}
+
+label:before {
+    content: '';
+    position: absolute;
+    left: -44px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid #fca311;
+    background-color: #14213d;
+}
+
+.testBlockWRONG input:checked + label:before {
+    background-color: #fca311;
+}
+
+.testBlockWRONG:checked + label:before {
+    background-color: #fca311;
+}
+
+.intestwr {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    column-gap: 57px;
+    width: 600px;
+    left: 20px;
+    margin: 0 auto;
+}
+
+/* You don`t have words with a few meaning(Block/Alert)*/
+.noteenoughmeanings{
+    width: 60%;
+    margin: 0 auto;
+    height: 400px;
+    position: relative;
+    border: 2px solid #14213d !important;
+    margin-top: -680px;
+    display: none;
+    background: black;
+    border: 2px solid;
+    z-index: 2;
+    border-radius: 26px;
+}
+
+
+.noteenoughmeanings .backmain {
+    margin-top: -20px;
+}
+
+.noteenoughmeanings h2 {
+    margin-top: 40px;
+}
+
+/* Pregress-bar */
+.progress-bar {
+    width: 50%;  
+    position: relative;
+    margin:  0 auto;
+    bottom: -220px;             
+    height: 30px;             
+    background-color: #966922;  
+    display: flex;
+    border-radius: 25px;
+    overflow: hidden;
+    border: 2px solid #fca311;
+}
+
+.correct-portion {
+    background-color: #4caf50; 
+    height: 100%;
+}
+
+.mistake-portion {
+    background-color: #f44336;
+    height: 100%;
+}
+
+/* Practise words */
+.trainYourKnowlege {
+    width: 100%;
+    position: relative;
+    height: 800px;
+    border: 2px solid #14213d;
+    margin-top: 100px;
+    display: none;
+    overflow: hidden;
+    border-radius: 26px;
+}
+
+.buttonsT {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 19px;
+    transition: 1s;
+    position: fixed;
+    margin-top: -200px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+.counterP {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 19px;
+    transition: 1s;
+    position: relative; 
+    margin-top: 348px;
+    font-size: 20px;
+    left: 50%;
+    transform: translateX(-50%); 
+    z-index: 1000;
+}
+

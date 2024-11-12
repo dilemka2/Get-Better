@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Better!</title>
+    <link rel="stylesheet" href="engproj.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="/img/getlogo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="mainblock">
+                <h1>Привіт! Вітаю в Get Better!</h1>
+                <p class="mainp">Запам'ятовуй слова разом з нами!</p>
+                <button class="startBTN">Почати тренування</button>
+                <button class="info">?</button>
+                <img src="img/menubg.png" alt="" class="mainBlockIMG">      
+            </div>
+            
+            <div class="menublock">
+                <h1>Привіт! Вітаю в Get Better!</h1>
+                <p class="mainp">Виберіть Режим!</p>
+                <div class="listofbtn" style="display: flex;justify-content: center; gap: 20px;">
+                    <button class="chooseBTN">Переклади Слово<br>(Вибрати)</button>
+                    <button class="chooseBTNSecond">Переклади Слово<br>(Написати)</button>
+                    <button class="btn addbtn">Додати Слово</button>
+                    <button class="ChoosethewrongBTN">Знайдіть зайве</button>
+                    <button class="trainBtn">Потренуватись</button>
+                </div>
+                <p id="averageInfo" style="position: absolute; left:290px; bottom: 60px; padding: 10px;"><span style="font-size: 26px;">Ваша Статистика</span>
+                    <br>Кількість відповідей:<span style="font-size: 20px;" class="amountofTries">0</span>
+                    <br>Кількість помилок:<span  style="font-size: 20px;"  class="amountofWan">0</span><br>
+                    Кількість Правильних відповідей:<span  style="font-size: 20px;" class="amountofRan">0</span></p>
+                <div class="progress-bar">
+                    <div class="correct-portion" id="correctPortion"></div>
+                    <div class="mistake-portion" id="mistakePortion"></div>
+                </div>
+                <button class="backmain">×</button>
+            </div>
+
+            <div class="infoBlock">
+                <h1>Привіт! Ласкаво просимо до Get Better!</h1>
+                <p class="mainp" style="margin-right: 0;">Що таке Get Better?</p>
+                <button class="backmain1">×</button>
+                
+                <h2 style="margin-top: 50px !important; width: 450px; margin:0 auto">
+                    Get Better — це програма, створена для зручного та ефективного запам'ятовування нових слів.
+                </h2>
+                
+                <p style="font-size: 20px; text-align: left; margin-left: 50px; margin-top: 20px;">
+                    <strong>Як почати?</strong><br>
+                    Просто створіть список слів, які ви хочете вивчити, у розділі <em>«Додати слово»</em> і почніть тренування! 
+                    Програма пропонує різні режими, що допоможуть запам'ятати слова та закріпити їх у вашій пам'яті.
+                </p>
+            
+                <p style="font-size: 20px; text-align: left; margin-left: 50px; margin-top: 20px;">
+                    <strong>Доступні режими:</strong><br>
+                </p>
+            
+                <p style="font-size: 20px; text-align: left; margin-left: 50px; margin-top: 20px;">
+                    <span style="font-weight: bold;">Переклади Слово (Вибрати):</span><br>
+                    У цьому режимі вам потрібно вибрати правильний переклад для слова з кількох запропонованих варіантів. Ідеально для початку, коли ще не впевнені у значеннях слів.
+                </p>
+            
+                <p style="font-size: 20px; text-align: left; margin-left: 50px; margin-top: 20px;">
+                    <span style="font-weight: bold;">Переклади Слово (Написати):</span><br>
+                    Цей режим перевіряє вашу пам'ять, коли вам потрібно самостійно написати переклад слова. Добре підходить для зміцнення знань.
+                </p>
+            
+                <p style="font-size: 20px; text-align: left; margin-left: 50px; margin-top: 20px;">
+                    <span style="font-weight: bold;">Переклади Слово (Знайди лишнє):</span><br>
+                    У цьому режимі вам потрібно обрати неправильний переклад слова серед правильних варіантів. Чудово тренує увагу до деталей.
+                </p>
+            
+                <p style="font-size: 20px; text-align: left; margin-left: 50px; margin-top: 20px;">
+                    <span style="font-weight: bold;">Потренуватись:</span><br>
+                    Режим, у якому ви можете повторити вже вивчені слова та нагадати собі їх значення. Корисно для регулярного оновлення знань.
+                </p>
+            </div>
+            
+
+            <div class="ChooseWBlock">
+                <h1>Переклади Слово!</h1>
+                <p class="mainp">Твоє завдання правильно перекласти слово</p>
+                <div class="blockW">
+                    <h2 class="thatword">Word</h2>
+                </div>
+                <div class="testBlock">
+                </div>
+                <div class="buttonBlock">
+                    <button class="check">Перевірити</button>
+                </div>
+                <p class="points" style="margin-top: 20px;font-size: 22px;text-align: center;">Очків: <br>0</p>
+                <button class="backmain2 backmain">×</button>
+            </div>
+
+            <div class="TranslateTheword">
+                <h1>Переклади Слово!</h1>
+                <p class="mainp">Твоє завдання правильно перекласти слово</p>
+                <div class="blockW">
+                    <h2 class="thatwordSecond thatword" id="thatwordSecond">Word</h2>
+                </div>
+                <input type="text" name="" id="" class="TranslateThewordInput">
+                <div class="testBlock">
+                </div>
+                <div class="buttonBlock">
+                    <button class="checkSecond">Перевірити</button>
+                </div>
+                <p class="pointsSecond" style="margin-top: 20px;font-size: 22px;text-align: center;">Очків: <br>0</p>
+                <button class="backmain5 backmain">×</button>
+            </div>
+
+            <div class="notenoughArrayContainer">
+                <div class="notenoughArray">
+                    <h2>Увага!</h2>
+                    <h3>Слів у вашому списку менше за 4!</h3>
+                    <h3>Натисніть на цю клавішу що б додати ще</h3>
+                    <button class="btn addbtnNot">Додати Слово</button>
+                    <button class="backmain backmain3">×</button>
+                </div>
+            </div>
+            <div class="noteenoughmeanings">
+                <h2>Увага!</h2>
+                <h3>У вашому списку менше слів з 3+ значеннями ніж 4!</h3>
+                <h3>Натисніть на цю клавішу що б додати ще</h3>
+                <button class="btn addbtnMeanning">Додати Значення</button>
+                <button class="backmain backmain7">×</button>
+             </div>
+
+            <div class="choosethedifficult">
+                <h1>Виберіть складність!</h1>
+                <div class="buttons">
+                    <button class="easy">Легкий<br><span>Від 3 слів</span></button>
+                    <button class="medium">Середній<br><span>Від 5 слів</span></button>
+                    <button class="hard">Тяжкий<br><span>Від 8 слів</span></button>
+                </div>
+            </div>
+
+            <div class="addWordBlock">
+                <h2>Додати Слово<br><span style="font-size: 12px;">(Що б написати декілька перекладів використовуйте кому)</span></h2>
+                <div class="wrapper">
+                    <div class="input-data">
+                        <input class="wordInput" type="text" style="border: none;"  class="ageinput"  required>
+                        <label class="wordInputP">Слово</label>
+                    </div>
+                </div>
+
+                <div class="wrapper">
+                    <div class="input-data">
+                        <input class="TranslatewordInput"  type="text" style="border: none;" class="biopet" required>
+                        <label class="wordInputPT">Переклад</label>
+                    </div>
+                </div>
+                <button class="btn addToA">Додати</button>
+                <button class="btn finishadding">Закінчити додавання</button><br>
+                Видалити слово<br>
+                <div class="knop">
+                    <input type="text" placeholder="Введіть №Рядка" id="n_del" class="n_del"><br>
+                    <input type="submit" value="ok" id="ok_del" class="btnin">
+                </div>
+                <p class="wordfortable" style="text-align: center;">Слово/Переклад</p>
+                <table class="addWordTable">
+                    
+                </table>
+            </div>
+
+            <div class="Choosethewrong">
+                <h1>Привіт! Вітаю в Get Better!</h1>
+                <p class="ChoosethewrongP">Мені здається щось тут зайве...</p>
+                <div class="blockWRONG">
+                    <h2 class="thatwordWRONG">Word</h2>
+                </div>
+                <div class="intestwr">
+                    <button class="ansthird btn" id="option1Lable"></button>
+                    <button class="ansthird btn" id="option2Lable"></button>
+                    <button class="ansthird btn" id="option3Lable"></button>
+                    <button class="ansthird btn" id="option4Lable"></button>
+                </div>
+                <p class="pointsthird" style="margin-top: 20px;font-size: 22px;text-align: center;">Очків: <br>0</p>
+                <button class="backmain backmain6" style="margin-top: 70px;">×</button>
+            </div>
+
+            <div class="trainYourKnowlege">
+                <h1>Привіт! Вітаю в Get Better!</h1>
+                <p class="ChoosethewrongP">Давай потренуємось!</p>
+
+                <div class="plistT" style="display: flex;
+                justify-content: space-around;width: 100%; font-size: 25px;margin-top: 200px;">
+                    <div class="commonwodr">
+                        <p>Слово:</p>
+                        <p class="wordT" style="opacity: 0;">Word</p>
+                    </div>
+                    <div class="commonwodr">
+                        <p>Переклад:</p>
+                        <p class="translateWordT" style="opacity: 0;">Translate</p>
+                    </div>
+                </div>
+                <p class="counterP"></p>
+                <div class="buttonsT">
+                    <button class="wordShow" style="height: 50px; display: flex;justify-content: center;align-items: center;">Слово</button>
+                    <button class="backT" style="font-size: 30px;">⬅</button>
+                    <button class="nextT" style="font-size: 30px;">⮕</button>
+                    <button class="TranslateShow" style="height: 50px; display: flex;justify-content: center;align-items: center;">Переклад</button>
+                </div>
+                <button class="backmain backmain8">×</button>
+            </div>
+        </div>
+    </main>
+    <script src="var.js"></script>
+    <script src="arrays.js"></script>
+    <script src="functions.js"></script>
+    <script src="engproj.js"></script>
+</body>
+</html>
