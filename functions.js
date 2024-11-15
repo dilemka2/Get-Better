@@ -471,21 +471,16 @@ function count_words (phrase) { ;
 
 // The function converts a string into an array of words and returns this array
 function stringToMassiv (phrase) { 
-	let M = []; // Масив зі слів, перерахованих через кому в рядковому елементі(// An array of comma-separated words in a string element)
-	let t=0; // індекс рядкового елемента, з якого починається слово(// The index of the string element that starts the word)
-	let i=0; // індекс рядкового елемента, на якому закінчується слово(// The index of the string element at which the word ends)   
-	let a;
-	for (a=0; a<count_words(phrase); a++) {
-		
-			while (phrase[i]!="," && i<phrase.length-1) {
-				i++;
-			}
-			i++;
-			M[a] = phrase.substring(t,i);
-			t=i+1; 
-	}
+	let M = []; 
+
+	M = phrase.split(","); 
+	M = M . map(function(slovo) { 
+        return slovo.trim(); 
+    });
+	
+	console.log(M);	
 	return(M);
-}	
+}
 function randomWrong() {
     // Вибираємо випадковий елемент з масиву B
     const randomIndex = Math.floor(Math.random() * B.length);
